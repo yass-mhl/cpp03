@@ -6,7 +6,7 @@
 /*   By: ymehlil <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 13:51:40 by ymehlil           #+#    #+#             */
-/*   Updated: 2023/07/28 14:58:49 by ymehlil          ###   ########.fr       */
+/*   Updated: 2023/07/28 15:00:48 by ymehlil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ int main() {
 		std::cout << std::endl;
 		clapClone.beRepaired(1);
 	}
-	
 	std::cout << std::endl;
 	return 0;
 }
