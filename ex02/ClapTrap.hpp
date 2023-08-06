@@ -6,13 +6,14 @@
 /*   By: ymehlil <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 13:20:54 by ymehlil           #+#    #+#             */
-/*   Updated: 2023/08/06 11:34:00 by ymehlil          ###   ########.fr       */
+/*   Updated: 2023/08/06 15:34:43 by ymehlil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CLAPTRAP_HPP
 # define CLAPTRAP_HPP
 # include <iostream>
+# include "colors.hpp"
 
 class ClapTrap {
 	public:

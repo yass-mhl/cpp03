@@ -6,14 +6,14 @@
 /*   By: ymehlil <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/30 02:40:20 by ymehlil           #+#    #+#             */
-/*   Updated: 2023/08/06 15:49:25 by ymehlil          ###   ########.fr       */
+/*   Updated: 2023/08/06 17:12:29 by ymehlil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
 ScavTrap::ScavTrap() : ClapTrap() {
-	std::cout << "ScavTrap default constructor called" << std::endl;
+	std::cout << RED << "ScavTrap default constructor called" << RESET << std::endl;
 	return ;
 }
 
@@ -52,9 +52,9 @@ void ScavTrap::attack(std::string const & target) {
 		return ;
 	}
 	else if (this->_energyPoints <= 0)
-		std::cout<< RED << "ScavTrap " << this->_name << " try to attack " << target << ", but he has no energy!" << RESET << std::endl;
+		std::cout << RED << "ScavTrap " << this->_name << " try to attack " << target << ", but he has no energy!" << RESET << std::endl;
 	else if (this->_hitPoints <= 0)
-		std::cout << RED << "ScavTrap " << this->_name << " try to attack " << target << ", but he is dead!" <<RESET << std::endl;
+		std::cout << RED << "ScavTrap " << this->_name << " try to attack " << target << ", but he is dead!" << RESET << std::endl;
 }
 
 void ScavTrap::guardGate()  {

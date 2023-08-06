@@ -6,7 +6,7 @@
 /*   By: ymehlil <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 13:24:23 by ymehlil           #+#    #+#             */
-/*   Updated: 2023/08/06 11:39:04 by ymehlil          ###   ########.fr       */
+/*   Updated: 2023/08/06 15:41:08 by ymehlil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 // Constructors
 
 ClapTrap::ClapTrap() : _name(""), _hitPoints(10), _energyPoints(10), _attackDamage(0) {
-	std::cout << "ClapTrap default constructor called" << std::endl;
+	std::cout << GREEN << "ClapTrap default constructor called" << RESET << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(10) {
-	 std::cout << "ClapTrap " << _name << " constructor called" << std::endl;
+	 std::cout << GREEN << "ClapTrap " << _name << " constructor called" << RESET << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name, unsigned int hitPoints, unsigned int energyPoints, unsigned int attackDamage) {
@@ -27,18 +27,18 @@ ClapTrap::ClapTrap(std::string name, unsigned int hitPoints, unsigned int energy
 	this->_hitPoints = hitPoints;
 	this->_energyPoints = energyPoints;
 	this->_attackDamage	= attackDamage;
-	std::cout << "ClapTrap constructor called" << std::endl;
+	std::cout << GREEN << "ClapTrap constructor called" << RESET << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap const & src) {
-	std::cout << "ClapTrap copy constructor called" << std::endl;
+	std::cout << GREEN << "ClapTrap copy constructor called" << RESET << std::endl;
 	*this = src;
 }
 
 // Operator
 
 ClapTrap & ClapTrap::operator=(ClapTrap const & src) {
-	std::cout << "ClapTrap assignation operator called" << std::endl;
+	std::cout << GREEN << "ClapTrap assignation operator called" << RESET << std::endl;
 	if (this != &src)
 	{
 		this->_name = src._name;
@@ -98,6 +98,6 @@ void ClapTrap::beRepaired(unsigned int amount) {
 // Destructor
 
 ClapTrap::~ClapTrap() {
-	std::cout << "ClapTrap destructor called" << std::endl;
+	std::cout << GREEN << "ClapTrap destructor called" << RESET << std::endl;
 }
 
